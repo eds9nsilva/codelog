@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter , Routes, Route } from 'react-router-dom'
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
 import HomeIndex from "./pages/home";
 
 export default function RoutesPag(){

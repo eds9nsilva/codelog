@@ -30,7 +30,7 @@ import {
                 CodeLog
               </Text>
               <br />{' '}
-              <Text color={'blue.400'} as={'span'}>
+              <Text color={'gray.600'} as={'span'}>
                 Designs e Projetos
               </Text>{' '}
             </Heading>
@@ -42,10 +42,10 @@ import {
                 <Link to='/contato'>
                     <Button
                         rounded={'full'}
-                        bg={'blue.400'}
+                        bg={'gray.600'}
                         color={'white'}
                         _hover={{
-                        bg: 'blue.500',
+                        bg: 'gray.800',
                         }}>
                         Fale Conosco
                     </Button>

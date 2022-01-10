@@ -73,10 +73,10 @@ export default function WithSubnavigation() {
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
-            bg={'blue.400'}
+            bg={'gray.600'}
             href={'#'}
             _hover={{
-              bg: 'blue.300',
+              bg: 'gray.600',
             }}>
             Trabalhe Conosco
           </Button>

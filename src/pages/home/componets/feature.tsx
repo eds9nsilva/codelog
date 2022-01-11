@@ -8,7 +8,7 @@ import { Feature } from './featureIndex'
 export default function featureIndex(){
   return(
     <Box as="section" maxW="5xl" mx="auto" py="12" px={{ base: '6', md: '8' }}>
-      
+
       <Text fontSize='4xl' align={'center'}>Algumas das Tecs que utilizamos</Text>
       <br></br>
     <SimpleGrid columns={{ base: 1, md: 2 }} spacingX="10" spacingY={{ base: '8', md: '14' }}>

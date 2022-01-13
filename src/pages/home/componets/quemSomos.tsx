@@ -1,70 +1,88 @@
 import React from "react";
-
 import {
-  Box,
-  Button,
   chakra,
+  Box,
+  Image,
   Flex,
-  SimpleGrid,
   useColorModeValue,
+  Link,
+  Text
 } from "@chakra-ui/react";
 
-export default function Asm() {
+const Ma = () => {
   return (
     <Flex
       bg={useColorModeValue("#F9FAFB", "gray.600")}
-      p={20}
+      p={50}
       w="full"
-      justifyContent="center"
       alignItems="center"
-      pos="absolute"
+      justifyContent="center"
     >
       <Box
-        shadow="xl"
-        bg={useColorModeValue("white", "gray.800")}
-        px={8}
-        py={20}
         mx="auto"
+        rounded="lg"
+        shadow="md"
+        bg={useColorModeValue("white", "gray.800")}
+        maxW="2xl"
       >
-        <SimpleGrid
-          alignItems="start"
-          columns={{ base: 1, md: 2 }}
-          mb={24}
-          spacingY={{ base: 10, md: 32 }}
-          spacingX={{ base: 10, md: 24 }}
-        >
+        <Image
+          roundedTop="lg"
+          w="full"
+          h={64}
+          fit="cover"
+          src="https://images.unsplash.com/photo-1618335829737-2228915674e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          alt="Article"
+        />
+
+        <Box p={6}>
           <Box>
-            <chakra.h2
-              mb={4}
-              fontSize={{ base: "2xl", md: "4xl" }}
-              fontWeight="extrabold"
-              letterSpacing="tight"
-              textAlign={{ base: "center", md: "left" }}
-              color={useColorModeValue("gray.900", "gray.400")}
-              lineHeight={{ md: "shorter" }}
-              textShadow="2px 0 currentcolor"
-            >
-              Um pouco sobre nós
-            </chakra.h2>
+              <Text  
+                display="block"
+                color={useColorModeValue("gray.800", "white")}
+                fontWeight="bold"
+                fontSize="2xl"
+                mt={2}
+              >
+                Um pouco sobre mim e a CodeLog
+              </Text>
+          
             <chakra.p
-              mb={5}
-              textAlign={{ base: "center", sm: "left" }}
+              mt={2}
+              fontSize="sm"
               color={useColorModeValue("gray.600", "gray.400")}
-              fontSize={{ md: "lg" }}
             >
-              Handle your subscriptions and transactions efficiently with the
-              clear overview in Dashboard. Features like the smart search option
-              allow you to quickly find any data you’re looking for.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
+              parturient et sem ipsum volutpat vel. Natoque sem et aliquam
+              mauris egestas quam volutpat viverra. In pretium nec senectus
+              erat. Et malesuada lobortis.
             </chakra.p>
           </Box>
-          <Box
-            w="full"
-            h="full"
-            py={48}
-            bg={useColorModeValue("gray.200", "gray.700")}
-          ></Box>
-        </SimpleGrid>
+
+          <Box mt={4}>
+            <Flex alignItems="center">
+              <Flex alignItems="center">
+                <Image
+                  h={100}
+                  fit="cover"
+                  rounded="full"
+                  src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60"
+                  alt="Avatar"
+                />
+                <Link
+                  mx={2}
+                  fontWeight="bold"
+                  color={useColorModeValue("gray.700", "gray.200")}
+                  
+                >
+                  Edson da Silva
+                </Link>
+              </Flex>
+            </Flex>
+          </Box>
+        </Box>
       </Box>
     </Flex>
   );
-}
+};
+
+export default Ma;

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import {
   chakra,
   Box,
@@ -50,14 +50,16 @@ export default function Gslr() {
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Button variant="ghost">Início</Button>
+              <Link to="/"> <Button variant="ghost">Início</Button> </Link>
               <Button variant="ghost">Sobre</Button>
               <Button variant="ghost">Serviços</Button>
               <Button variant="ghost">Contato</Button>
             </HStack>
-            <Button  color={'gray.900'} size="md">
-              Trabalhe Conosco
-            </Button>
+            <Link to="/manutencao">
+              <Button  color={'gray.900'} size="md">
+                Trabalhe Conosco
+              </Button>
+            </Link>
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
                 display={{ base: "flex", md: "none" }}

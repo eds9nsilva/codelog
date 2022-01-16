@@ -3,7 +3,7 @@ import Navbar from './componets/navbar';
 import Header from './componets/header';
 import FeatureIndex from './componets/feature';
 import QuemSomos from './componets/quemSomos';
-import Contato from './componets/contato';
+import Servico from './componets/servico';
 export default function HomeIndex(){
     return(
         <>
@@ -11,7 +11,7 @@ export default function HomeIndex(){
             <Header/>
             <FeatureIndex/>
             <QuemSomos/>
-            <Contato/>
+            <Servico/>
         </>
     );
 }

@@ -32,15 +32,15 @@ export default function Gslr() {
           <Flex>
             <chakra.a
               href="/"
-              title="Choc Home Page"
+              title="CodeLog Home Page"
               display="flex"
               alignItems="center"
             >
               
-              <VisuallyHidden>Choc</VisuallyHidden>
+              <VisuallyHidden>CodeLog</VisuallyHidden>
             </chakra.a>
             <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-              Choc
+              CodeLog
             </chakra.h1>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>

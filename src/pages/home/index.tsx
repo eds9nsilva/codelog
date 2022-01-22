@@ -4,6 +4,9 @@ import Header from './componets/header';
 import FeatureIndex from './componets/feature';
 import QuemSomos from './componets/quemSomos';
 import Servico from './componets/servico';
+import Marcas from './componets/marcas';
+import Contato from './componets/contato';
+import Fooater from './componets/footer';
 export default function HomeIndex(){
     return(
         <>
@@ -12,6 +15,9 @@ export default function HomeIndex(){
             <FeatureIndex/>
             <QuemSomos/>
             <Servico/>
+            <Marcas/>
+            <Contato/>
+            <Fooater/>
         </>
     );
 }

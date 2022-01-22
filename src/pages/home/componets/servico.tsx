@@ -11,8 +11,9 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   import {
-    IoAnalyticsSharp,
     IoLogoBitcoin,
+    IoPeopleCircleOutline,
+    IoCodeSlashSharp,
     IoSearchSharp,
   } from 'react-icons/io5';
   import { ReactElement } from 'react';
@@ -56,7 +57,7 @@ import {
               rounded={'md'}>
               Serviços
             </Text>
-            <Heading>A digital Product design agency</Heading>
+            <Heading>Serviços que oferecemos</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore
@@ -70,22 +71,15 @@ import {
               }>
               <Feature
                 icon={
-                  <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
+                  <Icon as={IoPeopleCircleOutline} color={'gray.700'} w={5} h={5} />
                 }
-                iconBg={useColorModeValue('yellow.100', 'yellow.900')}
+                iconBg={useColorModeValue('gray.400', 'yellow.900')}
                 text={'Gestão de Mídias Sociais'}
               />
               <Feature
-                icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-                iconBg={useColorModeValue('green.100', 'green.900')}
+                icon={<Icon as={IoCodeSlashSharp} color={'gray.700'} w={5} h={5} />}
+                iconBg={useColorModeValue('gray.400', 'green.900')}
                 text={'Desenvolvimento de Sistemas Web'}
-              />
-              <Feature
-                icon={
-                  <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
-                }
-                iconBg={useColorModeValue('purple.100', 'purple.900')}
-                text={'Market Analysis'}
               />
             </Stack>
           </Stack>
